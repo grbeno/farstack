@@ -10,6 +10,12 @@ import os
 
 # # run: uvicorn main:app --reload
 
+# Deployment
+# requirements.txt
+# Procfile
+# git, github repo
+# allow origin
+
 # Configure logging
 logging.basicConfig(
     level=logging.INFO,
@@ -60,7 +66,7 @@ app = FastAPI(
 # Add CORS middleware
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:8000"],  # In production, replace with specific origins
+    allow_origins=["http://localhost:8000", "https://farstack.up.railway.app"],  # In production, replace with specific origins
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
