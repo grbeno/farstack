@@ -130,7 +130,7 @@ dmypy.json
 .pyre/
 
 # FastAPI
-static/
+#static/
 
 
 ## Frontend
